@@ -1,6 +1,5 @@
 Dưới đây là file **README.md** mô tả dự án hệ thống gợi ý sản phẩm mua kèm cho cửa hàng trực tuyến:
 
-```markdown
 # Hệ Thống Gợi Ý Sản Phẩm Mua Kèm Cho Cửa Hàng Trực Tuyến
 
 ## 1. Giới Thiệu
@@ -63,7 +62,6 @@ Dự án này phát triển một hệ thống gợi ý sản phẩm mua kèm d�
 - Tên: [Tên của bạn]
 - Email: [Email của bạn]
 - Ngày tạo: [Ngày bắt đầu dự án]
-```
 
 ## Mô tả file README.md:
 - **Mục tiêu dự án**: Giới thiệu về mục đích và chức năng chính của hệ thống.
