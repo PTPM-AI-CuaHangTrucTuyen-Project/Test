@@ -85,4 +85,4 @@ Dự án này phát triển một hệ thống gợi ý sản phẩm mua kèm ch
 
 ---
 
-Phiên bản README.md này đã được điều chỉnh để dễ hiểu hơn, giúp người đọc dễ dàng nắm bắt các thông tin chính về dự án cũng như các bước cài đặt hệ thống.
+
