@@ -1,56 +1,71 @@
+Dưới đây là phiên bản README.md được chỉnh sửa lại với tone gần gũi, dễ tiếp cận hơn:
+
+---
+
 # Hệ Thống Gợi Ý Sản Phẩm Mua Kèm Cho Cửa Hàng Trực Tuyến
 
-## 1. Giới Thiệu
-Dự án này nhằm phát triển một hệ thống giúp cửa hàng trực tuyến tự động gợi ý các sản phẩm có liên quan hoặc thường được mua kèm với sản phẩm mà khách hàng chọn. Điều này không chỉ giúp tăng giá trị đơn hàng mà còn nâng cao trải nghiệm mua sắm của khách hàng, giúp họ dễ dàng tìm thấy những gì họ có thể cần thêm.
+## 1. Nhóm Thực Hiện
 
-## 2. Chức Năng Chính
-### 2.1 Quản Lý Dữ Liệu Sản Phẩm
-- Hệ thống sẽ cho phép bạn quản lý toàn bộ dữ liệu sản phẩm như tên, giá, mô tả, hình ảnh, và các thông tin như thương hiệu, kích thước, màu sắc, v.v.
-- Tất cả các thông tin này sẽ được lưu trữ trong cơ sở dữ liệu để dễ dàng truy xuất và quản lý.
+| **STT** | **Họ và Tên**    | **Vai trò**             | **Email**               | **Ghi chú**                              |
+|---------|------------------|-------------------------|-------------------------|------------------------------------------|
+| 1       | [Tên thành viên 1] | Lập trình WebForms       | [Email thành viên 1]     | Phụ trách giao diện và chức năng trên web |
+| 2       | [Tên thành viên 2] | Lập trình WinForms       | [Email thành viên 2]     | Phát triển ứng dụng trên desktop         |
+| 3       | [Tên thành viên 3] | AI và phân tích dữ liệu  | [Email thành viên 3]     | Xây dựng mô hình AI và xử lý dữ liệu     |
 
-### 2.2 Thu Thập Và Phân Tích Dữ Liệu Mua Sắm
-- Hệ thống sẽ tự động thu thập lịch sử mua sắm của khách hàng và phân tích dữ liệu để tìm ra các sản phẩm thường được mua kèm.
-- Qua đó, nó sẽ hiểu được mối liên hệ giữa các sản phẩm và đưa ra gợi ý thông minh.
+## 2. Giới Thiệu Dự Án
+Dự án này phát triển một hệ thống gợi ý sản phẩm mua kèm cho cửa hàng trực tuyến. Mục tiêu chính là khi khách hàng thêm một sản phẩm vào giỏ hàng, hệ thống sẽ tự động gợi ý những sản phẩm liên quan hoặc thường được mua kèm. Điều này giúp khách hàng dễ dàng lựa chọn, đồng thời giúp cửa hàng tăng doanh thu.
 
-### 2.3 Gợi Ý Sản Phẩm
-- Khi khách hàng thêm sản phẩm vào giỏ, hệ thống sẽ đưa ra các sản phẩm có thể mua kèm, giúp khách hàng dễ dàng lựa chọn hơn.
-- Ngoài ra, trên trang chi tiết sản phẩm và trong quá trình thanh toán, các gợi ý này cũng sẽ xuất hiện để tăng khả năng khách hàng mua thêm.
+## 3. Chức Năng Chính
 
-### 2.4 Quản Lý Thông Tin Khách Hàng
-- Lưu trữ và quản lý thông tin cá nhân của khách hàng như tên, email, lịch sử mua sắm.
-- Dựa trên hành vi mua sắm trước đây của khách hàng, hệ thống sẽ cá nhân hóa gợi ý, làm cho chúng chính xác và hữu ích hơn.
+### 3.1 Quản Lý Dữ Liệu Sản Phẩm
+- Bạn có thể quản lý thông tin sản phẩm như tên, giá, mô tả, hình ảnh, danh mục, thương hiệu, kích thước, màu sắc, v.v.
+- Tất cả thông tin này được lưu trong cơ sở dữ liệu, giúp dễ dàng tra cứu và quản lý.
 
-### 2.5 Báo Cáo Và Phân Tích
-- Hệ thống sẽ cung cấp báo cáo về số lượng sản phẩm được bán qua các gợi ý, giúp bạn theo dõi hiệu quả của chức năng này.
-- Phân tích xu hướng mua sắm để tối ưu hóa thuật toán và cải thiện hệ thống gợi ý.
+### 3.2 Thu Thập Và Phân Tích Dữ Liệu Mua Sắm
+- Hệ thống sẽ theo dõi lịch sử mua hàng của khách hàng, phân tích xem những sản phẩm nào thường được mua kèm với nhau.
+- Dựa vào những phân tích này, hệ thống sẽ đưa ra các gợi ý phù hợp cho khách hàng.
 
-## 3. Phân Chia Chức Năng Giữa WebForms và WinForms
+### 3.3 Gợi Ý Sản Phẩm
+- Khi khách hàng thêm sản phẩm vào giỏ, hệ thống sẽ gợi ý những sản phẩm có liên quan để khách hàng cân nhắc mua thêm.
+- Gợi ý cũng sẽ xuất hiện trên trang chi tiết sản phẩm và trong quá trình thanh toán.
+
+### 3.4 Quản Lý Thông Tin Khách Hàng
+- Hệ thống lưu trữ thông tin cá nhân của khách hàng như tên, email, lịch sử mua sắm, sở thích.
+- Những gợi ý sẽ được cá nhân hóa dựa trên hành vi mua sắm của từng khách hàng.
+
+### 3.5 Báo Cáo Và Phân Tích
+- Cung cấp báo cáo về các sản phẩm đã được mua thông qua gợi ý để theo dõi hiệu quả của hệ thống.
+- Hệ thống còn phân tích xu hướng mua sắm để liên tục cải tiến thuật toán và tăng hiệu quả gợi ý.
+
+## 4. Chia Chức Năng Giữa WebForms và WinForms
+
 ### WebForms:
-- **Hiển thị sản phẩm và gợi ý mua kèm** trên trang web cửa hàng, cho phép khách hàng xem và chọn các sản phẩm liên quan ngay khi duyệt trang.
-- **Quản lý giỏ hàng**: Cho phép khách hàng thêm sản phẩm vào giỏ và nhận gợi ý mua kèm ngay khi họ tiếp tục quá trình thanh toán.
-- **Quản lý thông tin khách hàng và giao dịch**: Tạo môi trường an toàn cho việc lưu trữ và truy cập thông tin khách hàng thông qua trình duyệt.
-- **Báo cáo và phân tích trực tuyến**: Giúp quản trị viên dễ dàng theo dõi hiệu suất hệ thống thông qua giao diện web, từ bất kỳ đâu.
+- **Hiển thị sản phẩm và gợi ý mua kèm**: Đây là nơi khách hàng sẽ thấy các gợi ý sản phẩm khi duyệt web và thực hiện mua sắm.
+- **Quản lý giỏ hàng**: Khách hàng có thể thêm sản phẩm vào giỏ và hệ thống sẽ ngay lập tức gợi ý những sản phẩm liên quan.
+- **Quản lý thông tin khách hàng và lịch sử giao dịch**: Bảo mật thông tin khách hàng và lưu trữ lịch sử giao dịch thông qua trình duyệt.
+- **Báo cáo và phân tích trực tuyến**: Hệ thống quản trị có thể theo dõi hiệu quả của gợi ý và xu hướng mua hàng từ xa.
 
 ### WinForms:
-- **Quản lý dữ liệu nội bộ**: Cho phép quản lý dữ liệu sản phẩm, khách hàng và đơn hàng một cách nhanh chóng, không cần kết nối mạng.
-- **Phân tích và cải thiện thuật toán AI**: WinForms là nơi thử nghiệm các mô hình AI trước khi triển khai trên hệ thống web, giúp tối ưu các gợi ý sản phẩm.
-- **Báo cáo nội bộ**: Cung cấp báo cáo chi tiết về doanh số và xu hướng mua sắm, hỗ trợ nhân viên quản lý dữ liệu cục bộ hiệu quả.
+- **Quản lý và phân tích dữ liệu nội bộ**: Nhân viên quản lý có thể xử lý dữ liệu sản phẩm, khách hàng và lịch sử mua hàng một cách dễ dàng trên máy tính.
+- **Phát triển và thử nghiệm AI**: Sử dụng WinForms để thử nghiệm các thuật toán AI trước khi triển khai chính thức.
+- **Báo cáo chi tiết nội bộ**: Cung cấp các báo cáo phân tích hiệu quả hệ thống, phục vụ công tác quản lý.
 
-## 4. Chức Năng AI
-- **Collaborative Filtering**: Sử dụng hành vi của khách hàng để gợi ý sản phẩm tương tự mà các khách hàng khác đã mua.
-- **Association Rules (Apriori, FP-Growth)**: Phân tích các mẫu giao dịch để tìm ra mối liên kết giữa các sản phẩm, từ đó đưa ra gợi ý mua kèm hợp lý.
-- **Deep Learning**: Áp dụng mô hình học sâu để phân tích hành vi phức tạp và dự đoán chính xác hơn những gì khách hàng có thể quan tâm.
+## 5. Chức Năng AI
+- **Collaborative Filtering**: Sử dụng dữ liệu từ những khách hàng khác để đưa ra gợi ý về những sản phẩm thường được mua cùng nhau.
+- **Association Rules (Apriori, FP-Growth)**: Phân tích các giao dịch mua hàng để tìm ra các mẫu liên kết giữa các sản phẩm.
+- **Deep Learning**: Áp dụng học sâu để xử lý các trường hợp phức tạp hơn, giúp đưa ra gợi ý chính xác hơn dựa trên nhiều yếu tố.
 
-## 5. Công Nghệ Sử Dụng
-- **Ngôn ngữ lập trình**: C# (WinForms), ASP.NET (WebForms).
+## 6. Công Nghệ Sử Dụng
+- **Ngôn ngữ lập trình**: C# (cho WinForms) và ASP.NET (cho WebForms).
 - **Cơ sở dữ liệu**: SQL Server hoặc MySQL để lưu trữ thông tin sản phẩm và khách hàng.
-- **Thư viện AI**: Sử dụng ML.NET hoặc TensorFlow.NET để tích hợp các mô hình AI vào hệ thống.
-- **API tích hợp**: Lấy dữ liệu sản phẩm từ các sàn thương mại điện tử lớn như Tiki, Shopee, Lazada.
+- **Thư viện AI**: ML.NET hoặc TensorFlow.NET để xây dựng các mô hình AI.
+- **API tích hợp**: Có thể tích hợp với các sàn thương mại điện tử lớn như Tiki, Shopee, Lazada để lấy dữ liệu sản phẩm.
 
-## 6. Hướng Dẫn Cài Đặt
+## 7. Hướng Dẫn Cài Đặt
+
 ### Yêu Cầu Hệ Thống:
-- .NET Framework 4.7 hoặc mới hơn
-- SQL Server/MySQL
+- .NET Framework 4.7 trở lên
+- SQL Server hoặc MySQL
 - ML.NET hoặc TensorFlow.NET
 
 ### Các Bước Cài Đặt:
@@ -59,18 +74,15 @@ Dự án này nhằm phát triển một hệ thống giúp cửa hàng trực t
    git clone https://github.com/yourusername/recommendation-system.git
    ```
 2. **Cấu hình cơ sở dữ liệu:**
-   - Mở file `appsettings.json` và cập nhật thông tin kết nối cơ sở dữ liệu.
+   - Mở file `appsettings.json` và điền thông tin kết nối với cơ sở dữ liệu của bạn.
 3. **Chạy dự án:**
-   - Sử dụng Visual Studio, mở giải pháp và nhấn `Run` để khởi động ứng dụng.
+   - Mở dự án trong Visual Studio, nhấn `Run` và hệ thống sẽ hoạt động.
 
-## 7. Link Tham Khảo
+## 8. Link Tham Khảo
 - [Tiki.vn](https://tiki.vn)
 - [Shopee.vn](https://shopee.vn)
 - [Lazada.vn](https://lazada.vn)
 
-## 8. Tác Giả
-- **Tên**: [Tên của bạn]
-- **Email**: [Email của bạn]
-- **Ngày tạo**: [Ngày bắt đầu dự án] 
+---
 
-File README.md này sẽ cung cấp cho bạn cái nhìn tổng quan về hệ thống gợi ý sản phẩm mua kèm, từ cách cài đặt cho đến các chức năng chính và công nghệ được sử dụng trong dự án.
+Phiên bản README.md này đã được điều chỉnh để dễ hiểu hơn, giúp người đọc dễ dàng nắm bắt các thông tin chính về dự án cũng như các bước cài đặt hệ thống.
