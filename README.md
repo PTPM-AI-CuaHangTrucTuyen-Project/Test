@@ -2,7 +2,7 @@ Dưới đây là file **README.md** mô tả dự án hệ thống gợi ý s�
 
 # Hệ Thống Gợi Ý Sản Phẩm Mua Kèm Cho Cửa Hàng Trực Tuyến
 
-## 1. Giới Thiệu
+### 1. Giới Thiệu
 Dự án này phát triển một hệ thống gợi ý sản phẩm mua kèm dành cho cửa hàng trực tuyến. Mục tiêu chính là cung cấp gợi ý sản phẩm liên quan hoặc thường được mua kèm khi khách hàng thêm một sản phẩm vào giỏ hàng, giúp tăng giá trị đơn hàng và nâng cao trải nghiệm mua sắm của khách hàng.
 
 ## 2. Chức Năng Chính
