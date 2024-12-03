@@ -5,7 +5,7 @@
 | **STT** | **Họ và Tên**    | **Vai trò**             | **Email**               | **Ghi chú**                              |
 |---------|------------------|-------------------------|-------------------------|------------------------------------------|
 | 1       | Lê Hữu Đán - 2001215690 | Lập trình WebForms       | lehuudan2011@gmail.com     | Phụ trách giao diện và chức năng trên web |
-| 2       | Bùi Quốc Công | Lập trình WinForms       | congbui123123@gmailcom     | Phát triển ứng dụng trên desktop         |
+| 2       | Bùi Quốc Công - 2001210455 | Lập trình WinForms       | congbui123123@gmailcom     | Phát triển ứng dụng trên desktop         |
 | 3       | Hà Phú Quý - 2001216088 | AI và phân tích dữ liệu  | hpquy9a4@gmail.com     | Xây dựng mô hình AI và xử lý dữ liệu     |
 
 ## 2. Giới Thiệu Dự Án
