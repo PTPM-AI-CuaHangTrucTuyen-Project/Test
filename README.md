@@ -1,16 +1,12 @@
-Dưới đây là phiên bản README.md được chỉnh sửa lại với tone gần gũi, dễ tiếp cận hơn:
-
----
-
 # Hệ Thống Gợi Ý Sản Phẩm Mua Kèm Cho Cửa Hàng Trực Tuyến
 
 ## 1. Nhóm Thực Hiện
 
 | **STT** | **Họ và Tên**    | **Vai trò**             | **Email**               | **Ghi chú**                              |
 |---------|------------------|-------------------------|-------------------------|------------------------------------------|
-| 1       | [Lê Hữu Đán] | Lập trình WebForms       | [Email thành viên 1]     | Phụ trách giao diện và chức năng trên web |
-| 2       | [Bùi Quốc Công] | Lập trình WinForms       | [Email thành viên 2]     | Phát triển ứng dụng trên desktop         |
-| 3       | [Hà Phú Quý] | AI và phân tích dữ liệu  | [Email thành viên 3]     | Xây dựng mô hình AI và xử lý dữ liệu     |
+| 1       | Lê Hữu Đán - 2001215690 | Lập trình WebForms       | lehuudan2011@gmail.com     | Phụ trách giao diện và chức năng trên web |
+| 2       | Bùi Quốc Công | Lập trình WinForms       | congbui123123@gmailcom     | Phát triển ứng dụng trên desktop         |
+| 3       | Hà Phú Quý - 2001216088 | AI và phân tích dữ liệu  | hpquy9a4@gmail.com     | Xây dựng mô hình AI và xử lý dữ liệu     |
 
 ## 2. Giới Thiệu Dự Án
 Dự án này phát triển một hệ thống gợi ý sản phẩm mua kèm cho cửa hàng trực tuyến. Mục tiêu chính là khi khách hàng thêm một sản phẩm vào giỏ hàng, hệ thống sẽ tự động gợi ý những sản phẩm liên quan hoặc thường được mua kèm. Điều này giúp khách hàng dễ dàng lựa chọn, đồng thời giúp cửa hàng tăng doanh thu.
@@ -61,24 +57,7 @@ Dự án này phát triển một hệ thống gợi ý sản phẩm mua kèm ch
 - **Thư viện AI**: ML.NET hoặc TensorFlow.NET để xây dựng các mô hình AI.
 - **API tích hợp**: Có thể tích hợp với các sàn thương mại điện tử lớn như Tiki, Shopee, Lazada để lấy dữ liệu sản phẩm.
 
-## 7. Hướng Dẫn Cài Đặt
-
-### Yêu Cầu Hệ Thống:
-- .NET Framework 4.7 trở lên
-- SQL Server hoặc MySQL
-- ML.NET hoặc TensorFlow.NET
-
-### Các Bước Cài Đặt:
-1. **Clone dự án về máy:**
-   ```bash
-   git clone https://github.com/yourusername/recommendation-system.git
-   ```
-2. **Cấu hình cơ sở dữ liệu:**
-   - Mở file `appsettings.json` và điền thông tin kết nối với cơ sở dữ liệu của bạn.
-3. **Chạy dự án:**
-   - Mở dự án trong Visual Studio, nhấn `Run` và hệ thống sẽ hoạt động.
-
-## 8. Link Tham Khảo
+## 7. Link Tham Khảo
 - [Tiki.vn](https://tiki.vn)
 - [Shopee.vn](https://shopee.vn)
 - [Lazada.vn](https://lazada.vn)
