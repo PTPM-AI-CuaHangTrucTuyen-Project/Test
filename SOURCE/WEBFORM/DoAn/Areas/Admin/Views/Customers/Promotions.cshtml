@@ -1,0 +1,59 @@
+﻿@model IEnumerable<DoAn.Models.BangTichDiem>
+
+@{
+    ViewBag.Title = "Promotions";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+@if (Session["UserAdmin"] != null)
+{    
+     <div class="shadow card mb-4">
+        <div class="card-header py-3">
+            <h2 class="m-0 font-weight-bold text-primary">Danh sách đơn hàng</h2>
+        </div>
+
+        <div class="card-body"> 
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" style="width:100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Mã Tích Điểm</th>
+                            <th>Mã Khách Hàng</th>
+                            <th>Tổng Điểm</th>
+                            <th>Giá Trị Giảm Giá</th>
+                            <th>Ngày Cập Nhật</th>
+                            <th>Phần trăm giảm</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.MaTichDiem</td>
+                                <td>@item.MaKhachHang</td>
+                                <td>@item.TongDiem</td>
+                                <td>@item.GiaTriGiamGia</td>
+                                <td>@item.NgayCapNhat.ToShortDateString()</td>
+                                <td>
+                                    <form action="/Admin/Customers/UpdatePromotion" method="post">
+                                        <input type="hidden" name="maKhachHang" value="@item.MaKhachHang" />
+                                        <input type="number" name="giaTriGiamGia" value="@item.GiaTriGiamGia" min="0" />
+                                        <button type="submit" class="btn btn-primary">Cập Nhật</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <div class="text-center alert">
+        <h1>Hãy đăng nhập để có quyền quản trị viên!</h1>
+        <a style="font-size:32px" href="@Url.Action("LoginAdmin", "UserAdmin")">Đăng nhập.</a>
+    </div>
+}

@@ -1,0 +1,181 @@
+﻿@model IEnumerable<DoAn.Models.OrderHistory>
+
+@{
+    ViewBag.Title = "Order History";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    td {
+        padding: 12px;
+    }
+
+    .btn-for-all {
+        border: none;
+        background-color: #ff0000;
+        font-size: 16px;
+        color: #ffffff;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+</style>
+
+
+<div class="small-container cart-page" style="padding:0px">
+
+    <table>
+        <tr>
+            <th>Order Date</th>
+            <th>Product Name</th>
+            <th>Image</th>
+            <th>Description</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Delivery Date</th>
+            <th>Payment Status</th>
+            <th>Delivery Status</th>
+            <th>Cancel Order</th>
+        </tr>
+        @if (Model.Any())
+        {
+            // Nhóm đơn hàng theo Ngày Đặt Hàng
+            var groupedOrders = Model.GroupBy(o => o.NgayDatHang).OrderBy(g => g.Key);
+
+            foreach (var group in groupedOrders)
+            {
+                <tr>
+                    <td colspan="10" style="font-weight: bold; text-align: left; background-color: #f2f2f2;">
+                        @group.Key.ToString("dd/MM/yyyy")
+                    </td>
+                </tr>
+
+                foreach (var order in group)
+                {
+                    var groupedItems = order.ChiTietDonHangs
+                                            .GroupBy(i => i.TenSanPham)
+                                            .Select(g => new
+                                            {
+                                                TenSanPham = g.Key,
+                                                HinhAnh = g.First().HinhAnh,
+                                                MoTa = g.First().MoTa,
+                                                SoLuong = g.Sum(i => i.SoLuong),
+                                                TongGia = g.Sum(i => i.SoLuong * i.GiaBan)
+                                            });
+
+                    foreach (var item in groupedItems)
+                    {
+                        <tr>
+                            <td></td> <!-- Để trống cột Order Date trong hàng sản phẩm -->
+                            <td>
+                                <div class="cart-info">
+                                    <div>
+                                        <p>@item.TenSanPham</p><br>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <img src="~/Assets/images/@item.HinhAnh">
+                            </td>
+                            <td>
+                                <p>@item.MoTa</p>
+                            </td>
+                            <td>
+                                <p>@item.SoLuong</p>
+                            </td>
+                            <td>@string.Format("{0:0,0 $}", @item.TongGia)</td>
+                            <td>
+                                <p>@order.NgayGiaoHang</p>
+                            </td>
+                            <td>
+                                <p>
+                                    @if (order.DaThanhToan.ToUpper() == "ĐÃ THANH TOÁN")
+                                    {
+                                        @("Paid")
+                                    }
+                                    else
+                                    {
+                                        @("Canceled")
+                                    }
+                                </p>
+                            </td>
+                            <td>
+                                <p>@(order.TinhTrangGiaoHang ? "On Delivered" : "Unknow")</p>
+                            </td>
+                            @* Không hiển thị nút Cancel Order ở đây *@
+                            <td></td>
+                        </tr>
+                    }
+                }
+
+                // Nút Cancel Order chung cho nhóm đơn hàng
+                <tr>
+                    <td colspan="10" style="text-align: right; padding: 10px;">
+                        @if (group.All(o => o.DaThanhToan.ToUpper() == "ĐÃ THANH TOÁN"))
+                        {
+                            <div id="order-actions-@group.Key.ToString("yyyyMMdd")">
+                                <form id="cancel-form-@group.Key.ToString("yyyyMMdd")" action="@Url.Action("CancelOrders", "OrderHistory")" method="post">
+                                    @foreach (var order in group)
+                                    {
+                                        <input type="hidden" name="maDonHangs" value="@order.MaDonHang" />
+                                    }
+                                    <button type="button" class="btn btn-for-all" onclick="cancelGroupOrder('@group.Key.ToString("yyyyMMdd")')">Cancel</button>
+                                </form>
+                            </div>
+                        }
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <p>No orders found for this customer.</p>
+        }
+    </table>
+</div>
+
+<script>
+    let currentOrderDate = ""; // Biến lưu trữ orderDate hiện tại
+
+    function cancelGroupOrder(orderDate) {
+        // Lưu orderDate vào biến toàn cục
+        currentOrderDate = orderDate;
+
+        // Hiển thị modal
+        $("#confirmation-modal").modal("show");
+    }
+
+    $(document).ready(function () {
+        // Khi nhấn nút "Order" trong modal
+        $("#confirm-payment-btn").click(function (e) {
+            e.preventDefault();
+
+            // Ẩn modal
+            $("#confirmation-modal").modal("hide");
+
+            // Gửi form tương ứng với orderDate đã lưu
+            if (currentOrderDate) {
+                document.getElementById("cancel-form-" + currentOrderDate).submit();
+            }
+        });
+    });
+</script>
+
+<!-- Modal -->
+<div id="confirmation-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog custom-dialog">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Cancel Order Confirmation</h4>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to cancel all orders for this date?</p>
+            </div>
+            <div class="modal-footer" style="padding: 20px 20px">
+                <button type="button" class="btn-for-all" data-dismiss="modal" style="float:left">Cancel</button>
+                <button type="button" class="btn-for-all" id="confirm-payment-btn" style="background-color: navy">Confirm</button>
+            </div>
+        </div>
+    </div>
+</div>

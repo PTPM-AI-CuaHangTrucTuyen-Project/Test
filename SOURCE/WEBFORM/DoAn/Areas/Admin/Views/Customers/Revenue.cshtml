@@ -1,0 +1,66 @@
+﻿@model IEnumerable<DoAn.Areas.Admin.Models.RevenueSummary>
+
+@{
+    ViewBag.Title = "Revenue";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+@if (Session["UserAdmin"] != null)
+{
+    
+    <div class="shadow card mb-4">
+        <div class="card-header py-3">
+            <h2 class="m-0 font-weight-bold text-primary">Danh sách đơn hàng</h2>
+        </div>
+
+        <div class="card-body"> 
+            <div class="table-responsive">
+                <form method="get" action="@Url.Action("Revenue", "Customers")">
+                    <label for="fromDate">Từ ngày:</label>
+                    <input type="date" id="fromDate" name="fromDate" value="@ViewBag.FromDate" />
+                    <label for="toDate">Đến ngày:</label>
+                    <input type="date" id="toDate" name="toDate" value="@ViewBag.ToDate" />
+                    <button type="submit">Thống kê</button>
+                </form>
+
+                <table class="table table-bordered" id="dataTable" style="width:100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Ngày</th>
+                            <th>Tổng doanh thu</th>
+                            <th>Tổng số lượng hoa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model != null && Model.Any())
+                        {
+                            foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.Ngay.ToString("dd/MM/yyyy")</td>
+                                    <td>@string.Format("{0:0,0} $", item.TongTien)</td>
+                                    <td>@item.SoLuongHoa</td>
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+                                <td colspan="3">Không có dữ liệu trong khoảng thời gian này.</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <div class="text-center alert">
+        <h1>Hãy đăng nhập để có quyền quản trị viên!</h1>
+        <a style="font-size:32px" href="@Url.Action("LoginAdmin", "UserAdmin")">Đăng nhập.</a>
+    </div>
+}
+

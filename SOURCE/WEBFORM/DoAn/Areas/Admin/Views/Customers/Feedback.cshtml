@@ -1,0 +1,53 @@
+﻿@model IEnumerable<DoAn.Models.PhanHoi>
+
+@{
+    ViewBag.Title = "Feedback";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+@if (Session["UserAdmin"] != null)
+{
+     <div class="shadow card mb-4">
+        <div class="card-header py-3">
+            <h2 class="m-0 font-weight-bold text-primary">Danh sách đơn hàng</h2>
+        </div>
+
+        <div class="card-body"> 
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" style="width:100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Tên Khách Hàng</th>
+                            <th>Số Điện Thoại</th>
+                            <th>Email</th>
+                            <th>Nội Dung</th>
+                            <th>Thời Gian</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var phanHoi in Model)
+                        {
+                            <tr>
+                                <td>@phanHoi.TenKhachHang</td>
+                                <td>@phanHoi.SoDienThoai</td>
+                                <td>@phanHoi.Email</td>
+                                <td>@phanHoi.NoiDung</td>
+                                <td>@phanHoi.ThoiGian.ToString("dd/MM/yyyy HH:mm")</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <div class="text-center alert">
+        <h1>Hãy đăng nhập để có quyền quản trị viên!</h1>
+        <a style="font-size:32px" href="@Url.Action("LoginAdmin", "UserAdmin")">Đăng nhập.</a>
+    </div>
+}
+
+

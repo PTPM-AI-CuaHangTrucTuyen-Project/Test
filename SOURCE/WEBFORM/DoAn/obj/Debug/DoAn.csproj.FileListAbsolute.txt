@@ -1,0 +1,80 @@
+D:\Study\Code\C#\LTWeb\Baocao\DoAn\DoAn\bin\DoAn.dll.config
+D:\Study\Code\C#\LTWeb\Baocao\DoAn\DoAn\bin\DoAn.dll
+D:\Study\Code\C#\LTWeb\Baocao\DoAn\DoAn\bin\DoAn.pdb
+D:\Study\Code\C#\LTWeb\Baocao\DoAn\DoAn\bin\Antlr3.Runtime.dll
+D:\Study\Code\C#\LTWeb\Baocao\DoAn\DoAn\bin\Microsoft.Web.Infrastructure.dll
+D:\Study\Code\C#\LTWeb\Baocao\DoAn\DoAn\bin\Newtonsoft.Json.dll
+D:\Study\Code\C#\LTWeb\Baocao\DoAn\DoAn\bin\System.Web.Helpers.dll
+D:\Study\Code\C#\LTWeb\Baocao\DoAn\DoAn\bin\System.Web.Mvc.dll
+D:\Study\Code\C#\LTWeb\Baocao\DoAn\DoAn\bin\System.Web.Optimization.dll
+D:\Study\Code\C#\LTWeb\Baocao\DoAn\DoAn\bin\System.Web.Razor.dll
+D:\Study\Code\C#\LTWeb\Baocao\DoAn\DoAn\bin\System.Web.WebPages.Deployment.dll
+D:\Study\Code\C#\LTWeb\Baocao\DoAn\DoAn\bin\System.Web.WebPages.dll
+D:\Study\Code\C#\LTWeb\Baocao\DoAn\DoAn\bin\System.Web.WebPages.Razor.dll
+D:\Study\Code\C#\LTWeb\Baocao\DoAn\DoAn\bin\WebGrease.dll
+D:\Study\Code\C#\LTWeb\Baocao\DoAn\DoAn\bin\System.Web.Helpers.xml
+D:\Study\Code\C#\LTWeb\Baocao\DoAn\DoAn\bin\System.Web.Mvc.xml
+D:\Study\Code\C#\LTWeb\Baocao\DoAn\DoAn\bin\System.Web.Optimization.xml
+D:\Study\Code\C#\LTWeb\Baocao\DoAn\DoAn\bin\System.Web.Razor.xml
+D:\Study\Code\C#\LTWeb\Baocao\DoAn\DoAn\bin\System.Web.WebPages.xml
+D:\Study\Code\C#\LTWeb\Baocao\DoAn\DoAn\bin\System.Web.WebPages.Deployment.xml
+D:\Study\Code\C#\LTWeb\Baocao\DoAn\DoAn\bin\System.Web.WebPages.Razor.xml
+D:\Study\Code\C#\LTWeb\Baocao\DoAn\DoAn\bin\Newtonsoft.Json.xml
+D:\Study\Code\C#\LTWeb\Baocao\DoAn\DoAn\bin\Antlr3.Runtime.pdb
+D:\Study\Code\C#\LTWeb\Baocao\DoAn\DoAn\obj\Debug\DoAn.csprojResolveAssemblyReference.cache
+D:\Study\Code\C#\LTWeb\Baocao\DoAn\DoAn\obj\Debug\DoAn.dll
+D:\Study\Code\C#\LTWeb\Baocao\DoAn\DoAn\obj\Debug\DoAn.pdb
+D:\Study\Code\Doanmon\Nhom7\Baocao\DoAn\DoAn\obj\Debug\DoAn.dll
+D:\Study\Code\Doanmon\Nhom7\Baocao\DoAn\DoAn\obj\Debug\DoAn.pdb
+D:\Study\Code\Doanmon\Nhom7\Baocao\DoAn\DoAn\bin\DoAn.dll.config
+D:\Study\Code\Doanmon\Nhom7\Baocao\DoAn\DoAn\bin\DoAn.dll
+D:\Study\Code\Doanmon\Nhom7\Baocao\DoAn\DoAn\bin\DoAn.pdb
+D:\Study\Code\Doanmon\Nhom7\Baocao\DoAn\DoAn\bin\Antlr3.Runtime.dll
+D:\Study\Code\Doanmon\Nhom7\Baocao\DoAn\DoAn\bin\Microsoft.Web.Infrastructure.dll
+D:\Study\Code\Doanmon\Nhom7\Baocao\DoAn\DoAn\bin\Newtonsoft.Json.dll
+D:\Study\Code\Doanmon\Nhom7\Baocao\DoAn\DoAn\bin\System.Web.Helpers.dll
+D:\Study\Code\Doanmon\Nhom7\Baocao\DoAn\DoAn\bin\System.Web.Mvc.dll
+D:\Study\Code\Doanmon\Nhom7\Baocao\DoAn\DoAn\bin\System.Web.Optimization.dll
+D:\Study\Code\Doanmon\Nhom7\Baocao\DoAn\DoAn\bin\System.Web.Razor.dll
+D:\Study\Code\Doanmon\Nhom7\Baocao\DoAn\DoAn\bin\System.Web.WebPages.Deployment.dll
+D:\Study\Code\Doanmon\Nhom7\Baocao\DoAn\DoAn\bin\System.Web.WebPages.dll
+D:\Study\Code\Doanmon\Nhom7\Baocao\DoAn\DoAn\bin\System.Web.WebPages.Razor.dll
+D:\Study\Code\Doanmon\Nhom7\Baocao\DoAn\DoAn\bin\WebGrease.dll
+D:\Study\Code\Doanmon\Nhom7\Baocao\DoAn\DoAn\bin\System.Web.Helpers.xml
+D:\Study\Code\Doanmon\Nhom7\Baocao\DoAn\DoAn\bin\System.Web.Mvc.xml
+D:\Study\Code\Doanmon\Nhom7\Baocao\DoAn\DoAn\bin\System.Web.Optimization.xml
+D:\Study\Code\Doanmon\Nhom7\Baocao\DoAn\DoAn\bin\System.Web.Razor.xml
+D:\Study\Code\Doanmon\Nhom7\Baocao\DoAn\DoAn\bin\System.Web.WebPages.xml
+D:\Study\Code\Doanmon\Nhom7\Baocao\DoAn\DoAn\bin\System.Web.WebPages.Deployment.xml
+D:\Study\Code\Doanmon\Nhom7\Baocao\DoAn\DoAn\bin\System.Web.WebPages.Razor.xml
+D:\Study\Code\Doanmon\Nhom7\Baocao\DoAn\DoAn\bin\Newtonsoft.Json.xml
+D:\Study\Code\Doanmon\Nhom7\Baocao\DoAn\DoAn\bin\Antlr3.Runtime.pdb
+D:\Study\Code\Doanmon\Nhom7\Baocao\DoAn\DoAn\obj\Debug\DoAn.csprojResolveAssemblyReference.cache
+D:\_HUIT\SoftTech\Nân cao\Nhóm 10\DoAn\DoAn\bin\DoAn.dll.config
+D:\_HUIT\SoftTech\Nân cao\Nhóm 10\DoAn\DoAn\bin\DoAn.dll
+D:\_HUIT\SoftTech\Nân cao\Nhóm 10\DoAn\DoAn\bin\DoAn.pdb
+D:\_HUIT\SoftTech\Nân cao\Nhóm 10\DoAn\DoAn\bin\Antlr3.Runtime.dll
+D:\_HUIT\SoftTech\Nân cao\Nhóm 10\DoAn\DoAn\bin\Microsoft.Web.Infrastructure.dll
+D:\_HUIT\SoftTech\Nân cao\Nhóm 10\DoAn\DoAn\bin\Newtonsoft.Json.dll
+D:\_HUIT\SoftTech\Nân cao\Nhóm 10\DoAn\DoAn\bin\System.Web.Helpers.dll
+D:\_HUIT\SoftTech\Nân cao\Nhóm 10\DoAn\DoAn\bin\System.Web.Mvc.dll
+D:\_HUIT\SoftTech\Nân cao\Nhóm 10\DoAn\DoAn\bin\System.Web.Optimization.dll
+D:\_HUIT\SoftTech\Nân cao\Nhóm 10\DoAn\DoAn\bin\System.Web.Razor.dll
+D:\_HUIT\SoftTech\Nân cao\Nhóm 10\DoAn\DoAn\bin\System.Web.WebPages.Deployment.dll
+D:\_HUIT\SoftTech\Nân cao\Nhóm 10\DoAn\DoAn\bin\System.Web.WebPages.dll
+D:\_HUIT\SoftTech\Nân cao\Nhóm 10\DoAn\DoAn\bin\System.Web.WebPages.Razor.dll
+D:\_HUIT\SoftTech\Nân cao\Nhóm 10\DoAn\DoAn\bin\WebGrease.dll
+D:\_HUIT\SoftTech\Nân cao\Nhóm 10\DoAn\DoAn\bin\System.Web.Helpers.xml
+D:\_HUIT\SoftTech\Nân cao\Nhóm 10\DoAn\DoAn\bin\System.Web.Mvc.xml
+D:\_HUIT\SoftTech\Nân cao\Nhóm 10\DoAn\DoAn\bin\System.Web.Optimization.xml
+D:\_HUIT\SoftTech\Nân cao\Nhóm 10\DoAn\DoAn\bin\System.Web.Razor.xml
+D:\_HUIT\SoftTech\Nân cao\Nhóm 10\DoAn\DoAn\bin\System.Web.WebPages.xml
+D:\_HUIT\SoftTech\Nân cao\Nhóm 10\DoAn\DoAn\bin\System.Web.WebPages.Deployment.xml
+D:\_HUIT\SoftTech\Nân cao\Nhóm 10\DoAn\DoAn\bin\System.Web.WebPages.Razor.xml
+D:\_HUIT\SoftTech\Nân cao\Nhóm 10\DoAn\DoAn\bin\Newtonsoft.Json.xml
+D:\_HUIT\SoftTech\Nân cao\Nhóm 10\DoAn\DoAn\bin\Antlr3.Runtime.pdb
+D:\_HUIT\SoftTech\Nân cao\Nhóm 10\DoAn\DoAn\obj\Debug\DoAn.csproj.AssemblyReference.cache
+D:\_HUIT\SoftTech\Nân cao\Nhóm 10\DoAn\DoAn\obj\Debug\DoAn.csproj.CoreCompileInputs.cache
+D:\_HUIT\SoftTech\Nân cao\Nhóm 10\DoAn\DoAn\obj\Debug\DoAn.csproj.CopyComplete
+D:\_HUIT\SoftTech\Nân cao\Nhóm 10\DoAn\DoAn\obj\Debug\DoAn.dll
+D:\_HUIT\SoftTech\Nân cao\Nhóm 10\DoAn\DoAn\obj\Debug\DoAn.pdb
