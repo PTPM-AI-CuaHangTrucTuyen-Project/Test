@@ -4,9 +4,9 @@
 
 | **STT** | **Họ và Tên**    | **Vai trò**             | **Email**               | **Ghi chú**                              |
 |---------|------------------|-------------------------|-------------------------|------------------------------------------|
-| 1       | Lê Hữu Đán - 2001215690 | Lập trình WebForms       | lehuudan2011@gmail.com     | Phụ trách giao diện và chức năng trên web |
-| 2       | Bùi Quốc Công - 2001210455 | Lập trình WinForms       | congbui123123@gmailcom     | Phát triển ứng dụng trên desktop         |
-| 3       | Hà Phú Quý - 2001216088 | AI và phân tích dữ liệu  | hpquy9a4@gmail.com     | Xây dựng mô hình AI và xử lý dữ liệu     |
+| 1       | Lê Hữu Đán - 2001215690 | Lập trình WebForms | lehuudan2011@gmail.com | Phụ trách giao diện và chức năng trên web |
+| 2       | Bùi Quốc Công - 2001210455 | Lập trình WinForms | congbui123123@gmailcom | Phát triển ứng dụng trên desktop |
+| 3       | Hà Phú Quý - 2001216088 | AI và phân tích dữ liệu | hpquy9a4@gmail.com | Xây dựng mô hình AI và xử lý dữ liệu |
 
 ## 2. Giới Thiệu Dự Án
 Dự án này phát triển một hệ thống gợi ý sản phẩm mua kèm cho cửa hàng trực tuyến. Mục tiêu chính là khi khách hàng thêm một sản phẩm vào giỏ hàng, hệ thống sẽ tự động gợi ý những sản phẩm liên quan hoặc thường được mua kèm. Điều này giúp khách hàng dễ dàng lựa chọn, đồng thời giúp cửa hàng tăng doanh thu.
