@@ -8,9 +8,9 @@ Dưới đây là phiên bản README.md được chỉnh sửa lại với tone
 
 | **STT** | **Họ và Tên**    | **Vai trò**             | **Email**               | **Ghi chú**                              |
 |---------|------------------|-------------------------|-------------------------|------------------------------------------|
-| 1       | [Tên thành viên 1] | Lập trình WebForms       | [Email thành viên 1]     | Phụ trách giao diện và chức năng trên web |
-| 2       | [Tên thành viên 2] | Lập trình WinForms       | [Email thành viên 2]     | Phát triển ứng dụng trên desktop         |
-| 3       | [Tên thành viên 3] | AI và phân tích dữ liệu  | [Email thành viên 3]     | Xây dựng mô hình AI và xử lý dữ liệu     |
+| 1       | [Lê Hữu Đán] | Lập trình WebForms       | [Email thành viên 1]     | Phụ trách giao diện và chức năng trên web |
+| 2       | [Bùi Quốc Công] | Lập trình WinForms       | [Email thành viên 2]     | Phát triển ứng dụng trên desktop         |
+| 3       | [Hà Phú Quý] | AI và phân tích dữ liệu  | [Email thành viên 3]     | Xây dựng mô hình AI và xử lý dữ liệu     |
 
 ## 2. Giới Thiệu Dự Án
 Dự án này phát triển một hệ thống gợi ý sản phẩm mua kèm cho cửa hàng trực tuyến. Mục tiêu chính là khi khách hàng thêm một sản phẩm vào giỏ hàng, hệ thống sẽ tự động gợi ý những sản phẩm liên quan hoặc thường được mua kèm. Điều này giúp khách hàng dễ dàng lựa chọn, đồng thời giúp cửa hàng tăng doanh thu.
