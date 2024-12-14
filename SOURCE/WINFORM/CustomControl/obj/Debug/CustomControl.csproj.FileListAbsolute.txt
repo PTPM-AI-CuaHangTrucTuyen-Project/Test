@@ -1,0 +1,6 @@
+E:\Coffein\QuanLyShopHoa\CustomControl\bin\Debug\CustomControl.dll
+E:\Coffein\QuanLyShopHoa\CustomControl\bin\Debug\CustomControl.pdb
+E:\Coffein\QuanLyShopHoa\CustomControl\obj\Debug\CustomControl.csproj.AssemblyReference.cache
+E:\Coffein\QuanLyShopHoa\CustomControl\obj\Debug\CustomControl.csproj.CoreCompileInputs.cache
+E:\Coffein\QuanLyShopHoa\CustomControl\obj\Debug\CustomControl.dll
+E:\Coffein\QuanLyShopHoa\CustomControl\obj\Debug\CustomControl.pdb

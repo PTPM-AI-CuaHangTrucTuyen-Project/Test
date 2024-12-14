@@ -1,0 +1,7 @@
+E:\Coffein\QuanLyShopHoa\DTO\bin\Debug\DTO.dll
+E:\Coffein\QuanLyShopHoa\DTO\bin\Debug\DTO.pdb
+E:\Coffein\QuanLyShopHoa\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+E:\Coffein\QuanLyShopHoa\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+E:\Coffein\QuanLyShopHoa\DTO\obj\Debug\DTO.dll
+E:\Coffein\QuanLyShopHoa\DTO\obj\Debug\DTO.pdb
+E:\Coffein\QuanLyShopHoa\DTO\bin\Debug\DTO.dll.config

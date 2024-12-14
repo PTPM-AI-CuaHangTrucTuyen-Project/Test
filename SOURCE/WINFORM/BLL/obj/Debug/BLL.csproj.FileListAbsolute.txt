@@ -1,0 +1,12 @@
+E:\Coffein\QuanLyShopHoa\BLL\bin\Debug\BLL.dll
+E:\Coffein\QuanLyShopHoa\BLL\bin\Debug\BLL.pdb
+E:\Coffein\QuanLyShopHoa\BLL\bin\Debug\DAL.dll
+E:\Coffein\QuanLyShopHoa\BLL\bin\Debug\DTO.dll
+E:\Coffein\QuanLyShopHoa\BLL\bin\Debug\DAL.pdb
+E:\Coffein\QuanLyShopHoa\BLL\bin\Debug\DTO.pdb
+E:\Coffein\QuanLyShopHoa\BLL\bin\Debug\DTO.dll.config
+E:\Coffein\QuanLyShopHoa\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\Coffein\QuanLyShopHoa\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\Coffein\QuanLyShopHoa\BLL\obj\Debug\BLL.csproj.CopyComplete
+E:\Coffein\QuanLyShopHoa\BLL\obj\Debug\BLL.dll
+E:\Coffein\QuanLyShopHoa\BLL\obj\Debug\BLL.pdb

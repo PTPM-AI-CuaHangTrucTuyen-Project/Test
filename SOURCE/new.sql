@@ -32,14 +32,21 @@ CREATE TABLE Hoa (
     CONSTRAINT FK_Hoa_LoaiSanPham FOREIGN KEY (MaLoai) REFERENCES LoaiSanPham(MaLoai)
 );
 
+CREATE TABLE NhomNguoiDung(
+	MaNhomNguoiDung varchar(20) PRIMARY KEY NOT NULL,
+	TenNhomNguoiDung nvarchar(50) NOT NULL
+);
+
 -- Tạo bảng QuanTriVien
 CREATE TABLE QuanTriVien (
     MaQTV INT IDENTITY(1,1) PRIMARY KEY,
     TenQTV NVARCHAR(255) NOT NULL,
     TaiKhoanQTV VARCHAR(50) NOT NULL UNIQUE,
     MatKhauQTV VARCHAR(50) NOT NULL CHECK (LEN(MatKhauQTV) >= 6),
-    EmailQTV VARCHAR(100) UNIQUE,
-    CONSTRAINT CK_EmailQTV CHECK (EmailQTV LIKE '%@%.%')
+	EmailQTV VARCHAR(100) UNIQUE,
+    CONSTRAINT CK_EmailQTV CHECK (EmailQTV LIKE '%@%.%'),
+	MaNhomNguoiDung varchar(20) NOT NULL,
+	CONSTRAINT FK_NhomNguoiDung_QuanTriVien FOREIGN KEY (MaNhomNguoiDung) REFERENCES NhomNguoiDung(MaNhomNguoiDung)
 );
 
 -- Tạo bảng KhachHang
@@ -151,6 +158,7 @@ CREATE TABLE BangTichDiem (
     MaTichDiem INT IDENTITY(1,1) PRIMARY KEY,
     MaKhachHang INT NOT NULL,
     TongDiem INT DEFAULT 0 CHECK (TongDiem >= 0),
+	GiaTriGiamGia INT DEFAULT 0 CHECK (GiaTriGiamGia >= 0),
     NgayCapNhat DATE NOT NULL DEFAULT GETDATE(),
     CONSTRAINT FK_BangTichDiem_KhachHang FOREIGN KEY (MaKhachHang) REFERENCES KhachHang(MaKhachHang)
 );
@@ -163,17 +171,6 @@ CREATE TABLE TongDoanhThu (
     TongTien DECIMAL(15, 2) NOT NULL CHECK (TongTien >= 0),
     SoLuongHoa INT NOT NULL CHECK (SoLuongHoa >= 0),
     CONSTRAINT FK_TongDoanhThu_DonHang FOREIGN KEY (MaDonHang) REFERENCES DonHang(MaDonHang)
-);
-
-CREATE TABLE NhomNguoiDung(
-	MaNhomNguoiDung varchar(20) PRIMARY KEY NOT NULL,
-	TenNhomNguoiDung nvarchar(50) NOT NULL
-);
-
-CREATE TABLE QL_NhomNguoiDung(
-	MaNhomNguoiDung varchar(20) NOT NULL,
-	TaiKhoan VARCHAR(50) NOT NULL UNIQUE,
-	CONSTRAINT FK_NhomNguoiDung_QL_NhomNguoiDung FOREIGN KEY (MaNhomNguoiDung) REFERENCES NhomNguoiDung(MaNhomNguoiDung)
 );
 
 CREATE TABLE ManHinh(
@@ -262,10 +259,10 @@ VALUES
 
   
 
-INSERT INTO QuanTriVien (TenQTV, TaiKhoanQTV, MatKhauQTV, EmailQTV) 
+INSERT INTO QuanTriVien (TenQTV, TaiKhoanQTV, MatKhauQTV, EmailQTV, MaNhomNguoiDung) 
 VALUES 
-		(N'Nguyen Van A', 'admin1', 'matkhau', 'nguyenvana@gmail.com'),
-		(N'Hoang Van E', 'nhanvien1', 'matkhau', 'hoangvane@gmail.com');
+		(N'Nguyen Van A', 'admin1', 'matkhau', 'nguyenvana@gmail.com', 'AD'),
+		(N'Hoang Van E', 'nhanvien1', 'matkhau', 'hoangvane@gmail.com', 'NV');
 
 
 INSERT INTO KhachHang (TenKhachHang, DiaChi, SoDienThoai, Email, NgaySinh, TaiKhoan, MatKhau, GioiTinh)
@@ -385,16 +382,7 @@ VALUES
 INSERT INTO NhomNguoiDung(MaNhomNguoiDung, TenNhomNguoiDung)
 VALUES
 ('AD', 'Admin'),
-('KH', 'Khách Hàng'),
 ('NV', 'Nhân Viên');
-
-INSERT INTO QL_NhomNguoiDung (MaNhomNguoiDung, TaiKhoan)
-SELECT 'KH', TaiKhoan FROM KhachHang
-UNION ALL
-SELECT 'AD', 'admin1'
-UNION ALL
-SELECT 'NV', 'nhanvien1';
-
 
 INSERT INTO ManHinh(MaManHinh, TenManHinh)
 VALUES
